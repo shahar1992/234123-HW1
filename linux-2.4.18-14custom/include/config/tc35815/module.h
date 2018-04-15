@@ -1,0 +1,1 @@
+#define CONFIG_TC35815_MODULE 1

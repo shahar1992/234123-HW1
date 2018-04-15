@@ -1,0 +1,1 @@
+#define CONFIG_MEGARAC_MODULE 1

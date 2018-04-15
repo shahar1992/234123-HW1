@@ -1,0 +1,181 @@
+acorn.o: acorn.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/types.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kdev_t.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/major.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/string.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/genhd.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/pagemap.h \
+   /usr/src/linux-2.4.18-14custom/fs/partitions/check.h \
+   /usr/src/linux-2.4.18-14custom/fs/partitions/acorn.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/blk/dev/mfm.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/acorn/partition/riscix.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/acorn/partition/cumana.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/acorn/partition/adfs.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/acorn/partition/ics.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/acorn/partition/powertec.h)
+acorn.h: \
+   /usr/src/linux-2.4.18-14custom/include/linux/adfs_fs.h
+	@touch acorn.h
+amiga.o: amiga.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/genhd.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/major.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/string.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/byteorder.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/affs_hardblocks.h \
+   /usr/src/linux-2.4.18-14custom/fs/partitions/check.h \
+   /usr/src/linux-2.4.18-14custom/fs/partitions/amiga.h
+atari.o: atari.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/genhd.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/major.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/string.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/ctype.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/byteorder.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/system.h \
+   /usr/src/linux-2.4.18-14custom/fs/partitions/check.h \
+   /usr/src/linux-2.4.18-14custom/fs/partitions/atari.h
+check.o: check.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/genhd.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/major.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/init.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/raid/md.h \
+   /usr/src/linux-2.4.18-14custom/fs/partitions/check.h \
+   /usr/src/linux-2.4.18-14custom/fs/partitions/acorn.h \
+   /usr/src/linux-2.4.18-14custom/fs/partitions/amiga.h \
+   /usr/src/linux-2.4.18-14custom/fs/partitions/atari.h \
+   /usr/src/linux-2.4.18-14custom/fs/partitions/ldm.h \
+   /usr/src/linux-2.4.18-14custom/fs/partitions/mac.h \
+   /usr/src/linux-2.4.18-14custom/fs/partitions/msdos.h \
+   /usr/src/linux-2.4.18-14custom/fs/partitions/osf.h \
+   /usr/src/linux-2.4.18-14custom/fs/partitions/sgi.h \
+   /usr/src/linux-2.4.18-14custom/fs/partitions/sun.h \
+   /usr/src/linux-2.4.18-14custom/fs/partitions/ibm.h \
+   /usr/src/linux-2.4.18-14custom/fs/partitions/ultrix.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/acorn/partition.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/ldm/partition.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/msdos/partition.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/osf/partition.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/sun/partition.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/amiga/partition.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/atari/partition.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/mac/partition.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/sgi/partition.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/ultrix/partition.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/ibm/partition.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/arch/s390.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/devfs/fs.h)
+ibm.o: ibm.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/genhd.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/major.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/string.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/hdreg.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/ioctl.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/version.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14custom/fs/partitions/ibm.h \
+   /usr/src/linux-2.4.18-14custom/fs/partitions/check.h
+ldm.o: ldm.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/types.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/unaligned.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/byteorder.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/pagemap.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/genhd.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blkdev.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/pagemap.h \
+   /usr/src/linux-2.4.18-14custom/fs/partitions/check.h \
+   /usr/src/linux-2.4.18-14custom/fs/partitions/ldm.h \
+   /usr/src/linux-2.4.18-14custom/fs/partitions/msdos.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/ldm/debug.h)
+ldm.h: \
+   /usr/src/linux-2.4.18-14custom/include/linux/types.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/unaligned.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/byteorder.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/genhd.h
+	@touch ldm.h
+mac.o: mac.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/genhd.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/major.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/string.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/ctype.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/system.h \
+   /usr/src/linux-2.4.18-14custom/fs/partitions/check.h \
+   /usr/src/linux-2.4.18-14custom/fs/partitions/mac.h
+msdos.o: msdos.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/genhd.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/major.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/string.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blk.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/blk/dev/ide.h) \
+   /usr/src/linux-2.4.18-14custom/include/linux/ide.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/blk/dev/ide/module.h) \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/system.h \
+   /usr/src/linux-2.4.18-14custom/fs/partitions/check.h \
+   /usr/src/linux-2.4.18-14custom/fs/partitions/msdos.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/blk/dev/md.h) \
+   /usr/src/linux-2.4.18-14custom/include/asm/unaligned.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/devfs/fs.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/solaris/x86/partition.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/bsd/disklabel.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/unixware/disklabel.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/minix/subpartition.h)
+osf.o: osf.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/genhd.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/major.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/string.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14custom/fs/partitions/check.h \
+   /usr/src/linux-2.4.18-14custom/fs/partitions/osf.h
+sgi.o: sgi.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/genhd.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/major.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/string.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/byteorder.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/system.h \
+   /usr/src/linux-2.4.18-14custom/fs/partitions/check.h \
+   /usr/src/linux-2.4.18-14custom/fs/partitions/sgi.h
+sun.o: sun.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/genhd.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/major.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/string.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/system.h \
+   /usr/src/linux-2.4.18-14custom/fs/partitions/check.h \
+   /usr/src/linux-2.4.18-14custom/fs/partitions/sun.h
+ultrix.o: ultrix.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/genhd.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/major.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14custom/fs/partitions/check.h
+.PRECIOUS:	acorn.h \
+	ldm.h \
+

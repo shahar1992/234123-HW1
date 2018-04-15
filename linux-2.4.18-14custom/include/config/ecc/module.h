@@ -1,0 +1,1 @@
+#define CONFIG_ECC_MODULE 1

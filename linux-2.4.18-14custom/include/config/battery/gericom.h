@@ -1,0 +1,1 @@
+#undef  CONFIG_BATTERY_GERICOM

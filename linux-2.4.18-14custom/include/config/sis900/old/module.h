@@ -1,0 +1,1 @@
+#define CONFIG_SIS900_OLD_MODULE 1

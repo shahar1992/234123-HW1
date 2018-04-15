@@ -1,0 +1,1 @@
+#define CONFIG_ABI_IBCS_MODULE 1

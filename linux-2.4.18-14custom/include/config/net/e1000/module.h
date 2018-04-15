@@ -1,0 +1,1 @@
+#define CONFIG_NET_E1000_MODULE 1

@@ -1,0 +1,4 @@
+#define __ver_pnpbios_register_driver	8e1433a8
+#define pnpbios_register_driver	_set_ver(pnpbios_register_driver)
+#define __ver_pnpbios_unregister_driver	2b109431
+#define pnpbios_unregister_driver	_set_ver(pnpbios_unregister_driver)

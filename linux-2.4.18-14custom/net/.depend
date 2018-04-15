@@ -1,0 +1,118 @@
+netsyms.o: netsyms.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/types.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/net.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/in.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/netdevice.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/inetdevice.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/fddidevice.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/trdevice.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/fcdevice.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/tty.h \
+   /usr/src/linux-2.4.18-14custom/include/net/neighbour.h \
+   /usr/src/linux-2.4.18-14custom/include/net/snmp.h \
+   /usr/src/linux-2.4.18-14custom/include/net/dst.h \
+   /usr/src/linux-2.4.18-14custom/include/net/checksum.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/etherdevice.h \
+   /usr/src/linux-2.4.18-14custom/include/net/route.h \
+   /usr/src/linux-2.4.18-14custom/include/net/tux.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/hippi.h) \
+   /usr/src/linux-2.4.18-14custom/include/linux/hippidevice.h \
+   /usr/src/linux-2.4.18-14custom/include/net/pkt_sched.h \
+   /usr/src/linux-2.4.18-14custom/include/net/scm.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/if_bridge.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/if_vlan.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/random.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/net/divert.h) \
+   /usr/src/linux-2.4.18-14custom/include/linux/divert.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/net.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/inet.h) \
+   /usr/src/linux-2.4.18-14custom/include/linux/ip.h \
+   /usr/src/linux-2.4.18-14custom/include/net/protocol.h \
+   /usr/src/linux-2.4.18-14custom/include/net/arp.h \
+   /usr/src/linux-2.4.18-14custom/include/net/ip.h \
+   /usr/src/linux-2.4.18-14custom/include/net/udp.h \
+   /usr/src/linux-2.4.18-14custom/include/net/tcp.h \
+   /usr/src/linux-2.4.18-14custom/include/net/icmp.h \
+   /usr/src/linux-2.4.18-14custom/include/net/inet_common.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/inet.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/mroute.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/igmp.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/ipv6.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/ipv6/module.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/khttpd.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/khttpd/module.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/tux.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/tux/module.h) \
+   /usr/src/linux-2.4.18-14custom/include/linux/in6.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/icmpv6.h \
+   /usr/src/linux-2.4.18-14custom/include/net/ipv6.h \
+   /usr/src/linux-2.4.18-14custom/include/net/ndisc.h \
+   /usr/src/linux-2.4.18-14custom/include/net/transp_v6.h \
+   /usr/src/linux-2.4.18-14custom/include/net/addrconf.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/rtnetlink.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/ipx/module.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/atalk/module.h) \
+   /usr/src/linux-2.4.18-14custom/include/net/sock.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/sysctl.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/filter.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/arpd.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/vlan/8021q.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/vlan/8021q/module.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/bridge.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/bridge/module.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/dlci/module.h) \
+   /usr/src/linux-2.4.18-14custom/include/net/ip6_route.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/netlink/dev.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/netlink/dev/module.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/tr.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/fddi.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/kmod.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/net/hw/flowcontrol.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/net/fastroute.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/net/sched.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/net/estimator.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/net/cls/police.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/net/cls.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/netfilter.h) \
+   /usr/src/linux-2.4.18-14custom/include/linux/netfilter.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/netfilter_ipv4.h
+socket.o: socket.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/socket.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/file.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/net.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/netdevice.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/wanrouter.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/netlink.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/rtnetlink.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/init.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/cache.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/highmem.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/kmod.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/net.h) \
+   /usr/src/linux-2.4.18-14custom/include/linux/kmod.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14custom/include/net/sock.h \
+   /usr/src/linux-2.4.18-14custom/include/net/scm.h \
+   /usr/src/linux-2.4.18-14custom/include/net/tux.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/netfilter.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/smp.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/wan/router.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/bluez.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/netlink/dev.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/netfilter.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/tux/module.h)
+sysctl_net.o: sysctl_net.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/sysctl.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/inet.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/net.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/ipv6.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/tr.h)

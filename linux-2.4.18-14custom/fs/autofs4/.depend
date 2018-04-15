@@ -1,0 +1,41 @@
+autofs_i.h: \
+   /usr/src/linux-2.4.18-14custom/include/linux/auto_fs4.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/list.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/string.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/wait.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/uaccess.h
+	@touch autofs_i.h
+expire.o: expire.c \
+   /usr/src/linux-2.4.18-14custom/fs/autofs4/autofs_i.h
+init.o: init.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/init.h \
+   /usr/src/linux-2.4.18-14custom/fs/autofs4/autofs_i.h
+inode.o: inode.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/file.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/locks.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/bitops.h \
+   /usr/src/linux-2.4.18-14custom/fs/autofs4/autofs_i.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h
+root.o: root.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/param.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14custom/fs/autofs4/autofs_i.h
+symlink.o: symlink.c \
+   /usr/src/linux-2.4.18-14custom/fs/autofs4/autofs_i.h
+waitq.o: waitq.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/signal.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/file.h \
+   /usr/src/linux-2.4.18-14custom/fs/autofs4/autofs_i.h
+.PRECIOUS:	autofs_i.h \
+

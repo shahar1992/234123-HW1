@@ -1,0 +1,55 @@
+lk201.o: lk201.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/tty.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/init.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kbd_ll.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kbd_kern.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/vt_kern.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/keyboard.h \
+   /usr/src/linux-2.4.18-14custom/drivers/tc/zs.h \
+   /usr/src/linux-2.4.18-14custom/drivers/tc/lk201.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/magic/sysrq.h)
+tc.o: tc.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/string.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/init.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/errno.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/ptrace.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h
+zs.o: zs.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/version.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/signal.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/tty.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/tty_flip.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/major.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/string.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/fcntl.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/init.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/ioport.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/serial/console.h) \
+   /usr/src/linux-2.4.18-14custom/include/linux/console.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/io.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/system.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/segment.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/bitops.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/uaccess.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/decstation.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/baget/mips.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/kgdb.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/magic/sysrq.h) \
+   /usr/src/linux-2.4.18-14custom/include/linux/sysrq.h \
+   /usr/src/linux-2.4.18-14custom/drivers/tc/zs.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/devfs/fs.h)

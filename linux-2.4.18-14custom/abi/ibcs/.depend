@@ -1,0 +1,14 @@
+sysent.o: sysent.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/init.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/personality.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/syscall.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/socket.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14custom/include/abi/svr4/sysent.h \
+   /usr/src/linux-2.4.18-14custom/include/abi/signal.h \
+   /usr/src/linux-2.4.18-14custom/include/abi/util/errno.h \
+   /usr/src/linux-2.4.18-14custom/include/abi/util/sysent.h \
+   /usr/src/linux-2.4.18-14custom/include/abi/util/socket.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/abi/xti.h)

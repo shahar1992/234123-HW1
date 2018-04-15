@@ -1,0 +1,3 @@
+ifeq (journal_reiserfs.o cache.o journal.o presto.o vfs.o psdev.o upcall.o methods.o sysctl.o dcache.o dir.o super.o journal_ext2.o journal_ext3.o journal_xfs.o inode.o file.o journal_obdfs.o,$(strip $(subst $(comma),:,$(EXTRA_LDFLAGS) $(obj-y))))
+FILES_FLAGS_UP_TO_DATE += intermezzo.o
+endif

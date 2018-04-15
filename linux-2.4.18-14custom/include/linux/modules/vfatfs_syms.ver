@@ -1,0 +1,14 @@
+#define __ver_vfat_create	46dfadc5
+#define vfat_create	_set_ver(vfat_create)
+#define __ver_vfat_unlink	04c53824
+#define vfat_unlink	_set_ver(vfat_unlink)
+#define __ver_vfat_mkdir	b8037c58
+#define vfat_mkdir	_set_ver(vfat_mkdir)
+#define __ver_vfat_rmdir	e7583398
+#define vfat_rmdir	_set_ver(vfat_rmdir)
+#define __ver_vfat_rename	cce5152f
+#define vfat_rename	_set_ver(vfat_rename)
+#define __ver_vfat_read_super	4c9bcca4
+#define vfat_read_super	_set_ver(vfat_read_super)
+#define __ver_vfat_lookup	37253bf0
+#define vfat_lookup	_set_ver(vfat_lookup)

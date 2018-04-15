@@ -1,0 +1,56 @@
+agpgart_be.o: agpgart_be.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/version.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/types.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/string.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/vmalloc.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/init.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/pagemap.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/miscdevice.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/pm.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/system.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/io.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/page.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/agp_backend.h \
+   /usr/src/linux-2.4.18-14custom/drivers/char/agp/agp.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/smp.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/x86.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/agp/i810.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/agp/intel.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/agp/via.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/agp/sis.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/agp/amd.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/agp/ali.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/agp/sworks.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/agp/hp/zx1.h)
+agpgart_fe.o: agpgart_fe.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/version.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/types.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/string.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/vmalloc.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/init.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/pagemap.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/miscdevice.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/agp_backend.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/agpgart.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/system.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/io.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/page.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/mman.h \
+   /usr/src/linux-2.4.18-14custom/drivers/char/agp/agp.h

@@ -1,0 +1,1 @@
+#define CONFIG_HISAX_DEBUG 1

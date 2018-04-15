@@ -1,0 +1,38 @@
+irnet.h: \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/tty.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/devfs_fs_kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/netdevice.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/miscdevice.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/ctype.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/ppp_defs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/if_ppp.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/ppp_channel.h \
+   /usr/src/linux-2.4.18-14custom/include/net/irda/irda.h \
+   /usr/src/linux-2.4.18-14custom/include/net/irda/iriap.h \
+   /usr/src/linux-2.4.18-14custom/include/net/irda/irias_object.h \
+   /usr/src/linux-2.4.18-14custom/include/net/irda/irlmp.h \
+   /usr/src/linux-2.4.18-14custom/include/net/irda/irttp.h \
+   /usr/src/linux-2.4.18-14custom/include/net/irda/discovery.h
+	@touch irnet.h
+irnet_irda.o: irnet_irda.c \
+   /usr/src/linux-2.4.18-14custom/net/irda/irnet/irnet_irda.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/proc/fs.h)
+irnet_irda.h: \
+   /usr/src/linux-2.4.18-14custom/net/irda/irnet/irnet.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/proc/fs.h)
+	@touch irnet_irda.h
+irnet_ppp.o: irnet_ppp.c \
+   /usr/src/linux-2.4.18-14custom/net/irda/irnet/irnet_ppp.h
+irnet_ppp.h: \
+   /usr/src/linux-2.4.18-14custom/net/irda/irnet/irnet.h
+	@touch irnet_ppp.h
+.PRECIOUS:	irnet.h \
+	irnet_irda.h \
+	irnet_ppp.h \
+

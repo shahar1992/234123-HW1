@@ -1,0 +1,14 @@
+#define __ver_find_transform_by_name	151f7de0
+#define find_transform_by_name	_set_ver(find_transform_by_name)
+#define __ver_register_transform	50b222e2
+#define register_transform	_set_ver(register_transform)
+#define __ver_unregister_transform	36a26531
+#define unregister_transform	_set_ver(unregister_transform)
+#define __ver_register_cipher	9ef91b70
+#define register_cipher	_set_ver(register_cipher)
+#define __ver_unregister_cipher	330460c9
+#define unregister_cipher	_set_ver(unregister_cipher)
+#define __ver_register_digest	dd6f5f6f
+#define register_digest	_set_ver(register_digest)
+#define __ver_unregister_digest	d1a5112e
+#define unregister_digest	_set_ver(unregister_digest)

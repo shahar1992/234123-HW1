@@ -1,0 +1,1 @@
+#define CONFIG_TUX_MODULE 1

@@ -1,0 +1,2 @@
+#define __ver_suni_init	0efe4cff
+#define suni_init	_set_ver(suni_init)

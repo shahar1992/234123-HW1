@@ -1,0 +1,1 @@
+#undef  CONFIG_FC_QLA2200
