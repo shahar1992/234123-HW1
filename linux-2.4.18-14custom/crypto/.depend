@@ -1,0 +1,10 @@
+cryptoapi.o: cryptoapi.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/version.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/init.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/string.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/crypto.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/proc_fs.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/kmod.h) \
+   /usr/src/linux-2.4.18-14custom/include/linux/kmod.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/proc/fs.h)

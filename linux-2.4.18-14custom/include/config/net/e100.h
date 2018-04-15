@@ -1,0 +1,1 @@
+#undef  CONFIG_NET_E100

@@ -1,0 +1,1 @@
+#define CONFIG_USB_LONG_TIMEOUT 1

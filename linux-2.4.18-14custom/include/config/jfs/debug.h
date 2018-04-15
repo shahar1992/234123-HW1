@@ -1,0 +1,1 @@
+#define CONFIG_JFS_DEBUG 1

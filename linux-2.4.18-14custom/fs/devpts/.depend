@@ -1,0 +1,29 @@
+devpts_i.h: \
+   /usr/src/linux-2.4.18-14custom/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/tty.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/types.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/devpts_fs.h
+	@touch devpts_i.h
+inode.o: inode.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/string.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/init.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kdev_t.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/locks.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/major.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/tty.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/bitops.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14custom/fs/devpts/devpts_i.h
+root.o: root.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/param.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/string.h \
+   /usr/src/linux-2.4.18-14custom/fs/devpts/devpts_i.h
+.PRECIOUS:	devpts_i.h \
+

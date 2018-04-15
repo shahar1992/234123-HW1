@@ -1,0 +1,6 @@
+#define __ver_aarp_send_ddp	62dffde7
+#define aarp_send_ddp	_set_ver(aarp_send_ddp)
+#define __ver_atrtr_get_dev	555abb3b
+#define atrtr_get_dev	_set_ver(atrtr_get_dev)
+#define __ver_atalk_find_dev_addr	6e91dbc8
+#define atalk_find_dev_addr	_set_ver(atalk_find_dev_addr)

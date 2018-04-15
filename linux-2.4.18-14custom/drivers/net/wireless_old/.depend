@@ -1,0 +1,75 @@
+hermes.o: hermes.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/types.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/threads.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/smp.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/io.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/ptrace.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/init.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/errno.h \
+   /usr/src/linux-2.4.18-14custom/drivers/net/wireless_old/hermes.h \
+   /usr/lib/gcc-lib/i386-redhat-linux/3.2/include/stdarg.h
+hermes.h: \
+   /usr/src/linux-2.4.18-14custom/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/if_ether.h
+	@touch hermes.h
+orinoco.o: orinoco.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/init.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/ptrace.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/string.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/io.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/system.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/netdevice.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/if_arp.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/etherdevice.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/wireless.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/list.h \
+   /usr/src/linux-2.4.18-14custom/include/pcmcia/version.h \
+   /usr/src/linux-2.4.18-14custom/include/pcmcia/cs_types.h \
+   /usr/src/linux-2.4.18-14custom/include/pcmcia/cs.h \
+   /usr/src/linux-2.4.18-14custom/include/pcmcia/cistpl.h \
+   /usr/src/linux-2.4.18-14custom/include/pcmcia/cisreg.h \
+   /usr/src/linux-2.4.18-14custom/include/pcmcia/ds.h \
+   /usr/src/linux-2.4.18-14custom/include/pcmcia/bus_ops.h \
+   /usr/src/linux-2.4.18-14custom/drivers/net/wireless_old/hermes.h \
+   /usr/src/linux-2.4.18-14custom/drivers/net/wireless_old/orinoco.h
+orinoco_cs.o: orinoco_cs.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/init.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/ptrace.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/string.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/io.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/system.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/netdevice.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/if_arp.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/etherdevice.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/wireless.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/list.h \
+   /usr/src/linux-2.4.18-14custom/include/pcmcia/version.h \
+   /usr/src/linux-2.4.18-14custom/include/pcmcia/cs_types.h \
+   /usr/src/linux-2.4.18-14custom/include/pcmcia/cs.h \
+   /usr/src/linux-2.4.18-14custom/include/pcmcia/cistpl.h \
+   /usr/src/linux-2.4.18-14custom/include/pcmcia/cisreg.h \
+   /usr/src/linux-2.4.18-14custom/include/pcmcia/ds.h \
+   /usr/src/linux-2.4.18-14custom/include/pcmcia/bus_ops.h \
+   /usr/src/linux-2.4.18-14custom/drivers/net/wireless_old/hermes.h \
+   /usr/src/linux-2.4.18-14custom/drivers/net/wireless_old/orinoco.h
+.PRECIOUS:	hermes.h \
+

@@ -1,0 +1,4 @@
+#define __ver_netdump_func	12e31521
+#define netdump_func	_set_ver(netdump_func)
+#define __ver_netdump_mode	df9f075e
+#define netdump_mode	_set_ver(netdump_mode)

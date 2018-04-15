@@ -1,0 +1,1 @@
+#define CONFIG_SPEAKUP_MODULE 1

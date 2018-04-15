@@ -1,0 +1,1 @@
+#undef  CONFIG_X86_POWERNOW_K6

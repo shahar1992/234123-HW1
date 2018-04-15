@@ -1,0 +1,4 @@
+#define __ver_dvb_register_device	6caf13f3
+#define dvb_register_device	_set_ver(dvb_register_device)
+#define __ver_dvb_unregister_device	eb77c5bf
+#define dvb_unregister_device	_set_ver(dvb_unregister_device)

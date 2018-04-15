@@ -1,0 +1,6 @@
+#define __ver_matroxfb_register_driver	939a9c05
+#define matroxfb_register_driver	_set_ver(matroxfb_register_driver)
+#define __ver_matroxfb_unregister_driver	2c9f966b
+#define matroxfb_unregister_driver	_set_ver(matroxfb_unregister_driver)
+#define __ver_matroxfb_switch	0ac16620
+#define matroxfb_switch	_set_ver(matroxfb_switch)

@@ -1,0 +1,1 @@
+#define CONFIG_FC_QLA2200_MODULE 1

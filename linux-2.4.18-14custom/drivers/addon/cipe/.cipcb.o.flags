@@ -1,0 +1,3 @@
+ifeq (module.o device.o sock.o output.o encaps.o crc32.o bf.o bf-i386.o,$(strip $(subst $(comma),:,$(EXTRA_LDFLAGS) $(obj-y))))
+FILES_FLAGS_UP_TO_DATE += cipcb.o
+endif

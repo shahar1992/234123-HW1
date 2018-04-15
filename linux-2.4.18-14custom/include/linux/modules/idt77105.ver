@@ -1,0 +1,4 @@
+#define __ver_idt77105_init	180680b7
+#define idt77105_init	_set_ver(idt77105_init)
+#define __ver_idt77105_stop	3262dc6c
+#define idt77105_stop	_set_ver(idt77105_stop)

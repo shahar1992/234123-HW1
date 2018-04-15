@@ -1,0 +1,1 @@
+#define CONFIG_TUX_EXTCGI 1
