@@ -1,3 +1,0 @@
-ifeq (inode.o file.o dir.o,$(strip $(subst $(comma),:,$(EXTRA_LDFLAGS) $(obj-y))))
-FILES_FLAGS_UP_TO_DATE += bfs.o
-endif

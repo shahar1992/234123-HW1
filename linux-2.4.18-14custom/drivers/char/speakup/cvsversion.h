@@ -1,1 +1,0 @@
-#define CVSVERSION " CVS: Tue Jun 11 14:22:53 EDT 2002 "

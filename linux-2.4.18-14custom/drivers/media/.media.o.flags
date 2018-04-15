@@ -1,3 +1,0 @@
-ifeq (video/video.o radio/radio.o,$(strip $(subst $(comma),:,$(EXTRA_LDFLAGS) $(obj-y))))
-FILES_FLAGS_UP_TO_DATE += media.o
-endif

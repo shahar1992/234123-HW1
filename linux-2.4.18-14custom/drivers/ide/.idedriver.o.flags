@@ -1,3 +1,0 @@
-ifeq (ide-mod.o ide-probe-mod.o ide-disk.o ide-floppy.o,$(strip $(subst $(comma),:,$(EXTRA_LDFLAGS) $(obj-y))))
-FILES_FLAGS_UP_TO_DATE += idedriver.o
-endif

@@ -1,2 +1,0 @@
-#define __ver_zone_table	80aef910
-#define zone_table	_set_ver(zone_table)

@@ -1,3 +1,0 @@
-ifeq (iscsi_main.o iscsi-login.o iscsiAuthClient.o iscsiAuthClientGlue.o md5.o,$(strip $(subst $(comma),:,$(EXTRA_LDFLAGS) $(obj-y))))
-FILES_FLAGS_UP_TO_DATE += iscsi.o
-endif

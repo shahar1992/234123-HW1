@@ -1,2 +1,0 @@
-#define __ver_matroxfb_g450_setclk	0e5551bd
-#define matroxfb_g450_setclk	_set_ver(matroxfb_g450_setclk)
