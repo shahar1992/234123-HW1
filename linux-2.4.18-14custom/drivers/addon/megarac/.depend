@@ -1,0 +1,160 @@
+admin.h: \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/dtypes.h
+	@touch admin.h
+agpintfc.h: \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/dtypes.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/rtc.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/rcs.h
+	@touch agpintfc.h
+alerter.h: \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/dtypes.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/rtc.h
+	@touch alerter.h
+batmon.h: \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/dtypes.h
+	@touch batmon.h
+ccbhdlr.h: \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/dtypes.h
+	@touch ccbhdlr.h
+comrcs.h: \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/rcs.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/dtypes.h
+	@touch comrcs.h
+dbglog.h: \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/dbg_fn.h
+	@touch dbglog.h
+evtlog.h: \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/dtypes.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/rtc.h
+	@touch evtlog.h
+megarac.o: megarac.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/reboot.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/types.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/tqueue.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/unistd.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/io.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/MegaRacDrvr.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/MegaRacDrvrLx.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/MegaRacDLL.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/MegaRacDebug.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/MegaRacDrvr.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/MegaRacDLL.h
+MegaRacDebug.h: \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/MegaRacWho.h \
+   /usr/lib/gcc-lib/i386-redhat-linux/3.2/include/stdarg.h
+	@touch MegaRacDebug.h
+MegaRacDLL.h: \
+   /usr/src/linux-2.4.18-14custom/include/linux/limits.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/admin.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/agpintfc.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/alerter.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/batmon.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/ccbhdlr.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/comrcs.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/crc16.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/dbglog.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/dmi.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/errcod.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/evtlog.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/ftp.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/flash.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/i2crsa.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/misc.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/post.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/rcs.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/rcsadmin.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/rcsdbg.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/rcsdiag.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/rcshhf.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/rcsic.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/rcsred.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/rcssdk.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/rcsusr.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/redirect.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/rtc.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/MegaRacDrvr.h
+	@touch MegaRacDLL.h
+MegaRacDrvr.h: \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/agpintfc.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/ccbhdlr.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/dmi.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/errcod.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/mg90xx.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/misc.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/rcsadmin.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/rcsic.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/redirect.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/MegaRacWho.h
+	@touch MegaRacDrvr.h
+MegaRacWho.h: \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/MegaRacDrvrLx.h
+	@touch MegaRacWho.h
+misc.h: \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/rcs.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/dtypes.h
+	@touch misc.h
+post.h: \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/rcs.h
+	@touch post.h
+rcsadmin.h: \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/rcs.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/rtc.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/admin.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/comrcs.h
+	@touch rcsadmin.h
+rcsdbg.h: \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/rcs.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/rtc.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/dbglog.h
+	@touch rcsdbg.h
+rcs.h: \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/dtypes.h
+	@touch rcs.h
+rcsic.h: \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/rtc.h
+	@touch rcsic.h
+rcsred.h: \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/rtc.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/rcs.h
+	@touch rcsred.h
+rcssdk.h: \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/i2crsa.h
+	@touch rcssdk.h
+redirect.h: \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/rcs.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/megarac/rcsred.h
+	@touch redirect.h
+.PRECIOUS:	admin.h \
+	agpintfc.h \
+	alerter.h \
+	batmon.h \
+	ccbhdlr.h \
+	comrcs.h \
+	dbglog.h \
+	evtlog.h \
+	MegaRacDebug.h \
+	MegaRacDLL.h \
+	MegaRacDrvr.h \
+	MegaRacWho.h \
+	misc.h \
+	post.h \
+	rcsadmin.h \
+	rcsdbg.h \
+	rcs.h \
+	rcsic.h \
+	rcsred.h \
+	rcssdk.h \
+	redirect.h \
+

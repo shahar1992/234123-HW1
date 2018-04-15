@@ -1,0 +1,1 @@
+#define CONFIG_USB_USBLCD_MODULE 1

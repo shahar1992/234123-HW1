@@ -1,0 +1,4 @@
+#define __ver_apm_battery_hook	d8e8130c
+#define apm_battery_hook	_set_ver(apm_battery_hook)
+#define __ver_apm_battery_hook_sem	0a67dd77
+#define apm_battery_hook_sem	_set_ver(apm_battery_hook_sem)

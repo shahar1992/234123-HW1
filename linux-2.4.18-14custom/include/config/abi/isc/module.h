@@ -1,0 +1,1 @@
+#define CONFIG_ABI_ISC_MODULE 1

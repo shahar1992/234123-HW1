@@ -1,0 +1,1 @@
+#define CONFIG_SBNI_MULTILINE 1

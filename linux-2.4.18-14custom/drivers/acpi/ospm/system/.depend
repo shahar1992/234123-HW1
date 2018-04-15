@@ -1,0 +1,19 @@
+sm.o: sm.c \
+   /usr/src/linux-2.4.18-14custom/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14custom/drivers/acpi/ospm/include/sm.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/software/suspend.h)
+sm_osl.o: sm_osl.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/init.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/types.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/pm.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/acpi.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/io.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/mc146818rtc.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/suspend.h \
+   /usr/src/linux-2.4.18-14custom/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14custom/drivers/acpi/ospm/include/sm.h

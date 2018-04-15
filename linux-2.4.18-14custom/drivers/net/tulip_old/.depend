@@ -1,0 +1,37 @@
+21142.o: 21142.c \
+   /usr/src/linux-2.4.18-14custom/drivers/net/tulip_old/tulip.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/delay.h
+eeprom.o: eeprom.c \
+   /usr/src/linux-2.4.18-14custom/drivers/net/tulip_old/tulip.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/init.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/unaligned.h
+interrupt.o: interrupt.c \
+   /usr/src/linux-2.4.18-14custom/drivers/net/tulip_old/tulip.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/etherdevice.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/pci.h
+media.o: media.c \
+   /usr/src/linux-2.4.18-14custom/drivers/net/tulip_old/tulip.h
+pnic.o: pnic.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/drivers/net/tulip_old/tulip.h
+timer.o: timer.c \
+   /usr/src/linux-2.4.18-14custom/drivers/net/tulip_old/tulip.h
+tulip_core.o: tulip_core.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   /usr/src/linux-2.4.18-14custom/drivers/net/tulip_old/tulip.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/init.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/etherdevice.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/unaligned.h
+tulip.h: \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/types.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/netdevice.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/io.h
+	@touch tulip.h
+.PRECIOUS:	tulip.h \
+

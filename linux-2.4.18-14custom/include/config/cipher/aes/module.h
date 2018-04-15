@@ -1,0 +1,1 @@
+#define CONFIG_CIPHER_AES_MODULE 1

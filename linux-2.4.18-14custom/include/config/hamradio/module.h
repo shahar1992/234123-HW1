@@ -1,0 +1,1 @@
+#define CONFIG_HAMRADIO_MODULE 1

@@ -1,0 +1,141 @@
+attr.o: attr.c \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/ntfstypes.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/struct.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/attr.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/ntfs_fs.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/macros.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/support.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/util.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/super.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/inode.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/unistr.h
+attr.h: \
+   /usr/src/linux-2.4.18-14custom/include/linux/nls.h
+	@touch attr.h
+dir.o: dir.c \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/ntfstypes.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/struct.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/dir.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/macros.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/super.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/inode.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/attr.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/support.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/util.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/bitops.h
+fs.o: fs.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/ntfstypes.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/struct.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/util.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/inode.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/super.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/dir.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/support.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/macros.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/sysctl.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/attr.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/locks.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/init.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blkdev.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/page.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/nls.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/ntfs_fs.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/ntfs/rw.h)
+inode.o: inode.c \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/ntfstypes.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/ntfsendian.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/struct.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/inode.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/macros.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/attr.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/super.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/dir.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/support.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/util.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/ntfs_fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/smp_lock.h
+macros.h: \
+   /usr/src/linux-2.4.18-14custom/include/linux/ntfs_fs_i.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/page.h
+	@touch macros.h
+ntfsendian.h: \
+   /usr/src/linux-2.4.18-14custom/include/asm/byteorder.h
+	@touch ntfsendian.h
+ntfstypes.h: \
+   /usr/src/linux-2.4.18-14custom/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/ntfsendian.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/types.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/posix_types.h
+	@touch ntfstypes.h
+struct.h: \
+   /usr/src/linux-2.4.18-14custom/include/linux/ntfs_fs.h
+	@touch struct.h
+super.o: super.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/ntfs_fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/bitops.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/ntfstypes.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/struct.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/super.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/macros.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/inode.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/support.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/util.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/smp_lock.h
+support.o: support.c \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/ntfstypes.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/struct.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/support.h \
+   /usr/lib/gcc-lib/i386-redhat-linux/3.2/include/stdarg.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/locks.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/util.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/inode.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/macros.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/nls.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/sysctl.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h
+support.h: \
+   /usr/src/linux-2.4.18-14custom/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/vmalloc.h
+	@touch support.h
+sysctl.o: sysctl.c \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/sysctl.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/locks.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/sysctl.h
+unistr.o: unistr.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/string.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/byteorder.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/unistr.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/macros.h
+unistr.h: \
+   /usr/src/linux-2.4.18-14custom/include/linux/types.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/nls.h
+	@touch unistr.h
+util.o: util.c \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/ntfstypes.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/struct.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/util.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/string.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/div64.h \
+   /usr/src/linux-2.4.18-14custom/fs/ntfs/support.h
+.PRECIOUS:	attr.h \
+	macros.h \
+	ntfsendian.h \
+	ntfstypes.h \
+	struct.h \
+	support.h \
+	unistr.h \
+

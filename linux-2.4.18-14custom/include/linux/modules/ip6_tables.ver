@@ -1,0 +1,14 @@
+#define __ver_ip6t_register_table	0b7a7da3
+#define ip6t_register_table	_set_ver(ip6t_register_table)
+#define __ver_ip6t_unregister_table	006d2ba7
+#define ip6t_unregister_table	_set_ver(ip6t_unregister_table)
+#define __ver_ip6t_do_table	c57e25ca
+#define ip6t_do_table	_set_ver(ip6t_do_table)
+#define __ver_ip6t_register_match	f246503a
+#define ip6t_register_match	_set_ver(ip6t_register_match)
+#define __ver_ip6t_unregister_match	62fa51a5
+#define ip6t_unregister_match	_set_ver(ip6t_unregister_match)
+#define __ver_ip6t_register_target	1c3f35db
+#define ip6t_register_target	_set_ver(ip6t_register_target)
+#define __ver_ip6t_unregister_target	d98a57d2
+#define ip6t_unregister_target	_set_ver(ip6t_unregister_target)

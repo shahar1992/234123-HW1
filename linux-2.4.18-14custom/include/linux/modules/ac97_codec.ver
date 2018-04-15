@@ -1,0 +1,12 @@
+#define __ver_ac97_read_proc	bae4da72
+#define ac97_read_proc	_set_ver(ac97_read_proc)
+#define __ver_ac97_probe_codec	84601c2b
+#define ac97_probe_codec	_set_ver(ac97_probe_codec)
+#define __ver_ac97_set_dac_rate	42924aaa
+#define ac97_set_dac_rate	_set_ver(ac97_set_dac_rate)
+#define __ver_ac97_set_adc_rate	5307368c
+#define ac97_set_adc_rate	_set_ver(ac97_set_adc_rate)
+#define __ver_ac97_save_state	32a87bac
+#define ac97_save_state	_set_ver(ac97_save_state)
+#define __ver_ac97_restore_state	9cc8c30e
+#define ac97_restore_state	_set_ver(ac97_restore_state)

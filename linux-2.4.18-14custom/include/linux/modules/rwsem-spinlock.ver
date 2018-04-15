@@ -1,0 +1,12 @@
+#define __ver_init_rwsem	ac458375
+#define init_rwsem	_set_ver(init_rwsem)
+#define __ver___down_read	6ebd46a5
+#define __down_read	_set_ver(__down_read)
+#define __ver___down_write	7fd54c5c
+#define __down_write	_set_ver(__down_write)
+#define __ver___up_read	5783e8ec
+#define __up_read	_set_ver(__up_read)
+#define __ver___up_write	70ec8bc6
+#define __up_write	_set_ver(__up_write)
+#define __ver___down_write_trylock	99c5de2a
+#define __down_write_trylock	_set_ver(__down_write_trylock)

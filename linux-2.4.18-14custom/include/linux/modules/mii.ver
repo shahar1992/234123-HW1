@@ -1,0 +1,8 @@
+#define __ver_mii_link_ok	633bd7b9
+#define mii_link_ok	_set_ver(mii_link_ok)
+#define __ver_mii_nway_restart	9d437993
+#define mii_nway_restart	_set_ver(mii_nway_restart)
+#define __ver_mii_ethtool_gset	aeb9c2b4
+#define mii_ethtool_gset	_set_ver(mii_ethtool_gset)
+#define __ver_mii_ethtool_sset	c366593c
+#define mii_ethtool_sset	_set_ver(mii_ethtool_sset)

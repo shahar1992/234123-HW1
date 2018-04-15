@@ -1,0 +1,74 @@
+extable.o: extable.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/uaccess.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/modules.h)
+fault.o: fault.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/signal.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/string.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/types.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/ptrace.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/mman.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/smp.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/init.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/tty.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/vt_kern.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/system.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/pgalloc.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/hardirq.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/smp.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/vt.h)
+init.o: init.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/signal.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/string.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/types.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/ptrace.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/mman.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/swap.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/smp.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/init.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/blk/dev/initrd.h) \
+   /usr/src/linux-2.4.18-14custom/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/highmem.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/pagemap.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/bootmem.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/processor.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/system.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/pgalloc.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/fixmap.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/e820.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/apic.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/tlb.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/highmem.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/x86/pae.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/x86/wp/works/ok.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/smp.h)
+ioremap.o: ioremap.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/vmalloc.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/io.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/pgalloc.h
+pageattr.o: pageattr.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/highmem.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/processor.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/x86/pae.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/highmem.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/smp.h)

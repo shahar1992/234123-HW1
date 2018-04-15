@@ -1,0 +1,4 @@
+#define __ver_llc_sap_open	84d4d2da
+#define llc_sap_open	_set_ver(llc_sap_open)
+#define __ver_llc_sap_close	f948c0b5
+#define llc_sap_close	_set_ver(llc_sap_close)

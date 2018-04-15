@@ -1,0 +1,10 @@
+#define __ver_mempool_create	405d915b
+#define mempool_create	_set_ver(mempool_create)
+#define __ver_mempool_resize	d2639d2d
+#define mempool_resize	_set_ver(mempool_resize)
+#define __ver_mempool_destroy	9f0d5c8e
+#define mempool_destroy	_set_ver(mempool_destroy)
+#define __ver_mempool_alloc	423e8207
+#define mempool_alloc	_set_ver(mempool_alloc)
+#define __ver_mempool_free	fee8c593
+#define mempool_free	_set_ver(mempool_free)

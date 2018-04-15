@@ -1,0 +1,3 @@
+ifeq (eeprom.o interrupt.o media.o timer.o tulip_core.o 21142.o pnic.o,$(strip $(subst $(comma),:,$(EXTRA_LDFLAGS) $(obj-y))))
+FILES_FLAGS_UP_TO_DATE += tulip_old.o
+endif

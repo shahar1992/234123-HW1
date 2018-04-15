@@ -1,0 +1,14 @@
+#define __ver_video_proc_entry	034fcbf9
+#define video_proc_entry	_set_ver(video_proc_entry)
+#define __ver_video_register_device	b2927b1b
+#define video_register_device	_set_ver(video_register_device)
+#define __ver_video_unregister_device	13dcb4bc
+#define video_unregister_device	_set_ver(video_unregister_device)
+#define __ver_video_devdata	bad58053
+#define video_devdata	_set_ver(video_devdata)
+#define __ver_video_usercopy	cad545cd
+#define video_usercopy	_set_ver(video_usercopy)
+#define __ver_video_exclusive_open	294fec13
+#define video_exclusive_open	_set_ver(video_exclusive_open)
+#define __ver_video_exclusive_release	42e2d599
+#define video_exclusive_release	_set_ver(video_exclusive_release)

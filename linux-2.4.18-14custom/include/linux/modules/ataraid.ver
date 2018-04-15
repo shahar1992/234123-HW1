@@ -1,0 +1,14 @@
+#define __ver_ataraid_get_bhead	a14cfec8
+#define ataraid_get_bhead	_set_ver(ataraid_get_bhead)
+#define __ver_ataraid_get_private	e7c72033
+#define ataraid_get_private	_set_ver(ataraid_get_private)
+#define __ver_ataraid_end_request	775a903a
+#define ataraid_end_request	_set_ver(ataraid_end_request)
+#define __ver_ataraid_get_device	1fde6369
+#define ataraid_get_device	_set_ver(ataraid_get_device)
+#define __ver_ataraid_release_device	0976dcee
+#define ataraid_release_device	_set_ver(ataraid_release_device)
+#define __ver_ataraid_gendisk	1b6aa2cb
+#define ataraid_gendisk	_set_ver(ataraid_gendisk)
+#define __ver_ataraid_register_disk	2ee2c084
+#define ataraid_register_disk	_set_ver(ataraid_register_disk)
