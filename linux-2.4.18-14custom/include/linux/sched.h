@@ -29,8 +29,9 @@ extern unsigned long event;
 #include <linux/low-latency.h>
 
 typedef enum {
-	ALLOW_FORK  = 0,
-	BLOCK_FORK = 1
+	LEVEL_0  = 0,
+	LEVEL_1 = 1,
+	LEVEL_2 = 2
 } plevel;
 
 struct exec_domain;
