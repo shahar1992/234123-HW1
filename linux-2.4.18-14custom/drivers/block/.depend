@@ -1,0 +1,477 @@
+acsi.o: acsi.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/signal.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/genhd.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/devfs_fs_kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/major.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14custom/include/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14custom/include/scsi/scsi_ioctl.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/hdreg.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blkpg.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/setup.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/system.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/uaccess.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/atari/slm.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/atari/slm/module.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/acsi/multi/lun.h)
+acsi_slm.o: acsi_slm.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/major.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/time.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/devfs_fs_kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/system.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/uaccess.h
+amiflop.o: amiflop.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/fcntl.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/fd.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/hdreg.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/types.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/string.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/init.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/amifdreg.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/amifd.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/setup.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/version.h
+ataflop.o: ataflop.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/string.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/fcntl.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/fd.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/types.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/init.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/setup.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/system.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/bitops.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blkpg.h
+blkpg.o: blkpg.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blkdev.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blkpg.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/genhd.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/swap.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/uaccess.h
+cciss.o: cciss.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/version.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/types.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/major.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blkpg.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/init.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/hdreg.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/io.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blkdev.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/genhd.h \
+   /usr/src/linux-2.4.18-14custom/drivers/block/cciss_cmd.h \
+   /usr/src/linux-2.4.18-14custom/drivers/block/cciss.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/cciss_ioctl.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/proc/fs.h) \
+   /usr/src/linux-2.4.18-14custom/drivers/block/cciss_scsi.c \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/ciss/scsi/tape.h)
+cciss_cmd.h: \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/ciss/scsi/tape.h)
+	@touch cciss_cmd.h
+cciss.h: \
+   /usr/src/linux-2.4.18-14custom/include/linux/genhd.h \
+   /usr/src/linux-2.4.18-14custom/drivers/block/cciss_cmd.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/ciss/scsi/tape.h)
+	@touch cciss.h
+cciss_scsi.o: cciss_scsi.c \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/ciss/scsi/tape.h) \
+   /usr/src/linux-2.4.18-14custom/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14custom/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/atomic.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14custom/drivers/block/cciss_scsi.h
+cciss_scsi.h: \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/ciss/scsi/tape.h) \
+   /usr/src/linux-2.4.18-14custom/include/scsi/scsicam.h
+	@touch cciss_scsi.h
+cpqarray.o: cpqarray.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/version.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/types.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/major.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blkpg.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/init.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/hdreg.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/io.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blkdev.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/genhd.h \
+   /usr/src/linux-2.4.18-14custom/drivers/block/cpqarray.h \
+   /usr/src/linux-2.4.18-14custom/drivers/block/ida_cmd.h \
+   /usr/src/linux-2.4.18-14custom/drivers/block/smart1,2.h \
+   /usr/src/linux-2.4.18-14custom/drivers/block/ida_ioctl.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/proc/fs.h)
+cpqarray.h: \
+   /usr/src/linux-2.4.18-14custom/include/linux/blkdev.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/locks.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14custom/drivers/block/ida_cmd.h
+	@touch cpqarray.h
+DAC960.o: DAC960.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/version.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/types.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blkdev.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/completion.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/hdreg.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blkpg.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/locks.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/reboot.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/init.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/io.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/segment.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14custom/drivers/block/DAC960.h
+elevator.o: elevator.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blkdev.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/elevator.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/uaccess.h
+floppy.o: floppy.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/tqueue.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/fdreg.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/fd.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/hdreg.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/string.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/fcntl.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/mc146818rtc.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/init.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/devfs_fs_kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/system.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/io.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/floppy.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blkpg.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/cdrom.h
+genhd.o: genhd.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/genhd.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/init.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/spinlock.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/proc/fs.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/net.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/atm.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/vt.h)
+ida_cmd.h: \
+   /usr/src/linux-2.4.18-14custom/include/asm/types.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blkdev.h
+	@touch ida_cmd.h
+ida_ioctl.h: \
+   /usr/src/linux-2.4.18-14custom/drivers/block/ida_cmd.h \
+   /usr/src/linux-2.4.18-14custom/drivers/block/cpqarray.h
+	@touch ida_ioctl.h
+ll_rw_blk.o: ll_rw_blk.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel_stat.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/string.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/locks.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/swap.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/init.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/completion.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/bootmem.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/system.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/io.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/highmem.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/mac/floppy/iwm.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/stram/swap.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/amiga/z2ram.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/isp16/cdi.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/ide.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/blk/dev/ide.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/blk/dev/hd.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/blk/dev/ps2.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/blk/dev/xd.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/blk/dev/mfm.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/paride.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/mac/floppy.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/blk/dev/swim/iop.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/amiga/floppy.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/atari/floppy.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/blk/dev/fd.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/cdu31a.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/atari/acsi.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/mcd.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/mcdx.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/sbpcd.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/aztcd.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/cdu535.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/gscd.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/cm206.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/optcd.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/sjcd.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/apblock.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/ddv.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/mdisk.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/dasd.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/s390/tape.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/s390/tape/block.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/blk/dev/xpram.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/sun/jsflash.h)
+loop.o: loop.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/file.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/major.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/wait.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blkpg.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/init.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/devfs_fs_kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/swap.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/loop.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/suspend.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/uaccess.h
+nbd.o: nbd.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/major.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/init.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/file.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/ioctl.h \
+   /usr/src/linux-2.4.18-14custom/include/net/sock.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/devfs_fs_kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/types.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/nbd.h
+ps2esdi.o: ps2esdi.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/major.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/blk/dev/ps2.h) \
+   /usr/src/linux-2.4.18-14custom/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/genhd.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/ps2esdi.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/devfs_fs_kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blkpg.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/mca.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/init.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/system.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/io.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/segment.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/mca_dma.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/uaccess.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/is.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/zd.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/sf.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/fr.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/rt.h)
+rd.o: rd.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/string.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/init.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/devfs_fs_kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blkpg.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/blk/dev/initrd.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/blk/dev/ram/size.h)
+swim3.o: swim3.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/stddef.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/fd.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/ioctl.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/io.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/devfs_fs_kernel.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/pmac/pbook.h)
+swim_iop.o: swim_iop.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/stddef.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/fd.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/ioctl.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/io.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/uaccess.h
+umem.o: umem.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/mman.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/ioctl.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/init.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/fcntl.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/hdreg.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/umem.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/io.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blkpg.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/mm/map/memory.h)
+xd.o: xd.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/genhd.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/hdreg.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/init.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/devfs_fs_kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/system.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/io.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blkpg.h \
+   /usr/src/linux-2.4.18-14custom/drivers/block/xd.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/page.h
+z2ram.o: z2ram.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/major.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/vmalloc.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/init.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/setup.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/bitops.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/zorro.h
+.PRECIOUS:	cciss_cmd.h \
+	cciss.h \
+	cciss_scsi.h \
+	cpqarray.h \
+	ida_cmd.h \
+	ida_ioctl.h \
+

@@ -1,0 +1,22 @@
+paep.o: paep.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/version.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/init.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/types.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/devfs_fs_kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/io.h \
+   /usr/src/linux-2.4.18-14custom/drivers/addon/aep/paep.h
+paep.h: \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/pci.h)
+	@touch paep.h
+.PRECIOUS:	paep.h \
+

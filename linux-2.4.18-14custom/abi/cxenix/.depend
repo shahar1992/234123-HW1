@@ -1,0 +1,55 @@
+misc.o: misc.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/types.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/unistd.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/ptrace.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/fcntl.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/time.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/signal.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/syscall.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/termios.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14custom/include/abi/util/trace.h \
+   /usr/src/linux-2.4.18-14custom/include/abi/util/sysent.h
+pathconf.o: pathconf.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/unistd.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/syscall.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/uaccess.h
+signal.o: signal.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/personality.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/unistd.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/syscall.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14custom/include/abi/cxenix/signal.h \
+   /usr/src/linux-2.4.18-14custom/include/abi/signal.h \
+   /usr/src/linux-2.4.18-14custom/include/abi/util/map.h \
+   /usr/src/linux-2.4.18-14custom/include/abi/util/sysent.h
+stubs.o: stubs.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/types.h \
+   /usr/src/linux-2.4.18-14custom/include/abi/cxenix/sysent.h
+sysent.o: sysent.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/personality.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/syscall.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14custom/include/abi/svr4/sysent.h \
+   /usr/src/linux-2.4.18-14custom/include/abi/cxenix/sysent.h \
+   /usr/src/linux-2.4.18-14custom/include/abi/util/errno.h \
+   /usr/src/linux-2.4.18-14custom/include/abi/util/sysent.h
+utsname.o: utsname.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/personality.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/utsname.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/uaccess.h

@@ -1,0 +1,2 @@
+#define __ver_shmem_file_setup	1d714a16
+#define shmem_file_setup	_set_ver(shmem_file_setup)

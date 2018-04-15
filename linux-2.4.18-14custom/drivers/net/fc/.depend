@@ -1,0 +1,27 @@
+iph5526.o: iph5526.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/init.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/if_arp.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/system.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/io.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/netdevice.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/fcdevice.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14custom/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14custom/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14custom/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14custom/drivers/fc4/fcp.h \
+   /usr/src/linux-2.4.18-14custom/drivers/net/fc/tach.h \
+   /usr/src/linux-2.4.18-14custom/drivers/net/fc/tach_structs.h \
+   /usr/src/linux-2.4.18-14custom/drivers/net/fc/iph5526_ip.h \
+   /usr/src/linux-2.4.18-14custom/drivers/net/fc/iph5526_scsi.h \
+   /usr/src/linux-2.4.18-14custom/drivers/net/fc/iph5526_novram.c

@@ -1,0 +1,24 @@
+isdnloop.o: isdnloop.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/init.h \
+   /usr/src/linux-2.4.18-14custom/drivers/isdn/isdnloop/isdnloop.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/isdn/x25.h)
+isdnloop.h: \
+   /usr/src/linux-2.4.18-14custom/include/linux/version.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/major.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/segment.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/io.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/signal.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/mman.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/wait.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/isdnif.h
+	@touch isdnloop.h
+.PRECIOUS:	isdnloop.h \
+

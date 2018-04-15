@@ -1,0 +1,2 @@
+#define __ver_atm_init_aal5	6e3a3b35
+#define atm_init_aal5	_set_ver(atm_init_aal5)

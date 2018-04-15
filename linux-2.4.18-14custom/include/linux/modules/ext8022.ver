@@ -1,0 +1,4 @@
+#define __ver_llc_register_sap	b6f8b86a
+#define llc_register_sap	_set_ver(llc_register_sap)
+#define __ver_llc_unregister_sap	d6a74e5e
+#define llc_unregister_sap	_set_ver(llc_unregister_sap)

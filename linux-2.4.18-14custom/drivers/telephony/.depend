@@ -1,0 +1,60 @@
+ixj.o: ixj.c \
+   /usr/src/linux-2.4.18-14custom/drivers/telephony/ixj-ver.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/init.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/tqueue.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/io.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/segment.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/isapnp.h \
+   /usr/src/linux-2.4.18-14custom/drivers/telephony/ixj.h
+ixj.h: \
+   /usr/src/linux-2.4.18-14custom/include/linux/types.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/ixjuser.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/phonedev.h
+	@touch ixj.h
+ixj_pcmcia.o: ixj_pcmcia.c \
+   /usr/src/linux-2.4.18-14custom/drivers/telephony/ixj-ver.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/init.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14custom/include/pcmcia/version.h \
+   /usr/src/linux-2.4.18-14custom/include/pcmcia/cs_types.h \
+   /usr/src/linux-2.4.18-14custom/include/pcmcia/cs.h \
+   /usr/src/linux-2.4.18-14custom/include/pcmcia/cistpl.h \
+   /usr/src/linux-2.4.18-14custom/include/pcmcia/ds.h \
+   /usr/src/linux-2.4.18-14custom/drivers/telephony/ixj.h
+phonedev.o: phonedev.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/version.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/types.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/string.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/phonedev.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/init.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/system.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kmod.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/sem.h
+.PRECIOUS:	ixj.h \
+

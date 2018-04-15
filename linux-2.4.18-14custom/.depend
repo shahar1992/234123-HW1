@@ -1,0 +1,78 @@
+init/do_mounts.o: init/do_mounts.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/devfs_fs_kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/unistd.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/ctype.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/fd.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/tty.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/init.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/nfs_fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/nfs_fs_sb.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/nfs_mount.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/minix_fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/ext2_fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/romfs_fs.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/blk/dev/initrd.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/arch/s390.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/root/nfs.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/blk/dev/ram.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/blk/dev/fd.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/ppc/iseries.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/devfs/fs.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/all/ppc.h) \
+   /usr/src/linux-2.4.18-14custom/lib/inflate.c
+init/main.o: init/main.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/devfs_fs_kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/unistd.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/string.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/ctype.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/utsname.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/init.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/hdreg.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/iobuf.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/bootmem.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/tty.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/suspend.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/io.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/bugs.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/arch/s390.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/pci.h) \
+   /usr/src/linux-2.4.18-14custom/include/linux/pci.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/dio.h) \
+   /usr/src/linux-2.4.18-14custom/include/linux/dio.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/zorro.h) \
+   /usr/src/linux-2.4.18-14custom/include/linux/zorro.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/mtrr.h) \
+   /usr/src/linux-2.4.18-14custom/include/asm/mtrr.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/nubus.h) \
+   /usr/src/linux-2.4.18-14custom/include/linux/nubus.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/isapnp.h) \
+   /usr/src/linux-2.4.18-14custom/include/linux/isapnp.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/pnpbios.h) \
+   /usr/src/linux-2.4.18-14custom/include/linux/pnpbios.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/irda.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/x86/local/apic.h) \
+   /usr/src/linux-2.4.18-14custom/include/asm/smp.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/tc.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/speakup.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/sysvipc.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/smp.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/modules.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/blk/dev/initrd.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/proc/fs.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/sysctl.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/sbus.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/ppc.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/mca.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/arch/acorn.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/pcmcia.h)
+init/version.o: init/version.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/uts.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/utsname.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/version.h

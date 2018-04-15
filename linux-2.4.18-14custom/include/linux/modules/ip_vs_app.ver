@@ -1,0 +1,4 @@
+#define __ver_register_ip_vs_app	bb64d27e
+#define register_ip_vs_app	_set_ver(register_ip_vs_app)
+#define __ver_unregister_ip_vs_app	a6ba5aea
+#define unregister_ip_vs_app	_set_ver(unregister_ip_vs_app)

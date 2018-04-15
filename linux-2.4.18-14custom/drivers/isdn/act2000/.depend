@@ -1,0 +1,38 @@
+act2000.h: \
+   /usr/src/linux-2.4.18-14custom/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/string.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/tqueue.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/major.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/segment.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/io.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/signal.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/mman.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/wait.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/ctype.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/isdnif.h
+	@touch act2000.h
+act2000_isa.o: act2000_isa.c \
+   /usr/src/linux-2.4.18-14custom/drivers/isdn/act2000/act2000.h \
+   /usr/src/linux-2.4.18-14custom/drivers/isdn/act2000/act2000_isa.h \
+   /usr/src/linux-2.4.18-14custom/drivers/isdn/act2000/capi.h
+capi.o: capi.c \
+   /usr/src/linux-2.4.18-14custom/drivers/isdn/act2000/act2000.h \
+   /usr/src/linux-2.4.18-14custom/drivers/isdn/act2000/capi.h
+module.o: module.c \
+   /usr/src/linux-2.4.18-14custom/drivers/isdn/act2000/act2000.h \
+   /usr/src/linux-2.4.18-14custom/drivers/isdn/act2000/act2000_isa.h \
+   /usr/src/linux-2.4.18-14custom/drivers/isdn/act2000/capi.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/init.h
+.PRECIOUS:	act2000.h \
+

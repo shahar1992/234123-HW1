@@ -1,0 +1,83 @@
+atyfb_base.o: atyfb_base.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/module.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/string.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/vmalloc.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/selection.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/console.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/fb.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/init.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/vt_kern.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/kd.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/io.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14custom/include/video/fbcon.h \
+   /usr/src/linux-2.4.18-14custom/include/video/fbcon-cfb8.h \
+   /usr/src/linux-2.4.18-14custom/include/video/fbcon-cfb16.h \
+   /usr/src/linux-2.4.18-14custom/include/video/fbcon-cfb24.h \
+   /usr/src/linux-2.4.18-14custom/include/video/fbcon-cfb32.h \
+   /usr/src/linux-2.4.18-14custom/drivers/video/aty/mach64.h \
+   /usr/src/linux-2.4.18-14custom/drivers/video/aty/atyfb.h \
+   /usr/src/linux-2.4.18-14custom/include/video/macmodes.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/adb/pmu.h) \
+   /usr/src/linux-2.4.18-14custom/include/linux/adb.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/pmu.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/bootx/text.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/nvram.h) \
+   /usr/src/linux-2.4.18-14custom/include/linux/nvram.h \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/fb/compat/xpmac.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/pmac/backlight.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/atari.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/ppc.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/fb/aty/gx.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/fb/aty/ct.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/pmac/pbook.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/chip/id.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/stat0.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/stat1.h) \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/pci.h)
+atyfb.h: \
+   $(wildcard /usr/src/linux-2.4.18-14custom/include/config/pmac/pbook.h)
+	@touch atyfb.h
+mach64_accel.o: mach64_accel.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/fb.h \
+   /usr/src/linux-2.4.18-14custom/include/video/fbcon.h \
+   /usr/src/linux-2.4.18-14custom/include/video/fbcon-cfb8.h \
+   /usr/src/linux-2.4.18-14custom/include/video/fbcon-cfb16.h \
+   /usr/src/linux-2.4.18-14custom/include/video/fbcon-cfb24.h \
+   /usr/src/linux-2.4.18-14custom/include/video/fbcon-cfb32.h \
+   /usr/src/linux-2.4.18-14custom/drivers/video/aty/mach64.h \
+   /usr/src/linux-2.4.18-14custom/drivers/video/aty/atyfb.h
+mach64_ct.o: mach64_ct.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/fb.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/io.h \
+   /usr/src/linux-2.4.18-14custom/include/video/fbcon.h \
+   /usr/src/linux-2.4.18-14custom/drivers/video/aty/mach64.h \
+   /usr/src/linux-2.4.18-14custom/drivers/video/aty/atyfb.h
+mach64_cursor.o: mach64_cursor.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/console.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/fb.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/init.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/io.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14custom/include/video/fbcon.h \
+   /usr/src/linux-2.4.18-14custom/drivers/video/aty/mach64.h \
+   /usr/src/linux-2.4.18-14custom/drivers/video/aty/atyfb.h
+mach64_gx.o: mach64_gx.c \
+   /usr/src/linux-2.4.18-14custom/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/fb.h \
+   /usr/src/linux-2.4.18-14custom/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14custom/include/asm/io.h \
+   /usr/src/linux-2.4.18-14custom/include/video/fbcon.h \
+   /usr/src/linux-2.4.18-14custom/drivers/video/aty/mach64.h \
+   /usr/src/linux-2.4.18-14custom/drivers/video/aty/atyfb.h
+.PRECIOUS:	atyfb.h \
+

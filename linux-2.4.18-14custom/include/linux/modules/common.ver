@@ -1,0 +1,16 @@
+#define __ver_atm_lane_ops	3c0fab39
+#define atm_lane_ops	_set_ver(atm_lane_ops)
+#define __ver_atm_mpoa_ops	65943280
+#define atm_mpoa_ops	_set_ver(atm_mpoa_ops)
+#define __ver_atm_tcp_ops	d21f4b40
+#define atm_tcp_ops	_set_ver(atm_tcp_ops)
+#define __ver_pppoatm_ioctl_hook	90164c52
+#define pppoatm_ioctl_hook	_set_ver(pppoatm_ioctl_hook)
+#define __ver_br2684_ioctl_hook	30fb79bb
+#define br2684_ioctl_hook	_set_ver(br2684_ioctl_hook)
+#define __ver_atm_async_release_vcc	40a8d568
+#define atm_async_release_vcc	_set_ver(atm_async_release_vcc)
+#define __ver_br_fdb_get_hook	650128e7
+#define br_fdb_get_hook	_set_ver(br_fdb_get_hook)
+#define __ver_br_fdb_put_hook	b494e82a
+#define br_fdb_put_hook	_set_ver(br_fdb_put_hook)
