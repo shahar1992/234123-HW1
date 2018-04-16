@@ -34,6 +34,11 @@ typedef enum {
 	LEVEL_2 = 2
 } plevel;
 
+typedef enum {
+	BLOCK_POLICY = 0,
+	ALLOW_POLICY = 1
+} policy_ctrl;
+
 struct exec_domain;
 
 /*
@@ -458,8 +463,11 @@ struct task_struct {
 /* journalling filesystem info */
 	void *journal_info;
 
-/*new enum variable*/ 
+/*privilege level of a process*/ 
 	plevel priv;
+
+/*Policy feature on or off*/
+	policy_ctrl policy;
 };
 
 /*
@@ -566,6 +574,7 @@ extern struct exec_domain	default_exec_domain;
     alloc_lock:		SPIN_LOCK_UNLOCKED,				\
     journal_info:	NULL,						\
 	priv: LEVEL_2, \
+	policy: BLOCK_POLICY, \
 }
 
 
