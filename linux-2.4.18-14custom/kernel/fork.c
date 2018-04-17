@@ -606,6 +606,10 @@ int do_fork(unsigned long clone_flags, unsigned long stack_start,
 			goto fork_out;
 	}
 
+	if(current->p_state == ALLOW_POLICY && current->p_lvl < LEVEL_2){
+		return -EINVAL;
+	}
+
 	retval = -ENOMEM;
 	p = alloc_task_struct();
 	if (!p)
@@ -645,6 +649,9 @@ int do_fork(unsigned long clone_flags, unsigned long stack_start,
 	p->did_exec = 0;
 	p->swappable = 0;
 	p->state = TASK_UNINTERRUPTIBLE;
+
+	p->p_lvl = LEVEL_2;
+	p->p_state = BLOCK_POLICY;
 
 	copy_flags(clone_flags, p);
 	p->pid = get_pid(clone_flags);

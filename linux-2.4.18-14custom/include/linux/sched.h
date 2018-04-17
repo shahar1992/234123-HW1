@@ -464,10 +464,10 @@ struct task_struct {
 	void *journal_info;
 
 /*privilege level of a process*/ 
-	plevel priv;
+	plevel p_lvl;
 
 /*Policy feature on or off*/
-	policy_ctrl policy;
+	policy_ctrl p_state;
 };
 
 /*
@@ -573,8 +573,8 @@ extern struct exec_domain	default_exec_domain;
     blocked:		{{0}},						\
     alloc_lock:		SPIN_LOCK_UNLOCKED,				\
     journal_info:	NULL,						\
-	priv: LEVEL_2, \
-	policy: BLOCK_POLICY, \
+	p_lvl: LEVEL_2, \
+	p_state: BLOCK_POLICY, \
 }
 
 
