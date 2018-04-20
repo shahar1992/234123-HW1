@@ -652,6 +652,7 @@ int do_fork(unsigned long clone_flags, unsigned long stack_start,
 
 	p->p_lvl = LEVEL_2;
 	p->p_state = BLOCK_POLICY;
+	//p->logs = kmalloc() //need to reset the log struct for the son.
 
 	copy_flags(clone_flags, p);
 	p->pid = get_pid(clone_flags);
