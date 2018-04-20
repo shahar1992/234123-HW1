@@ -39,6 +39,12 @@ typedef enum {
 	ALLOW_POLICY = 1
 } policy_ctrl;
 
+struct forbidden_activity_info{
+	int syscall_req_level;
+	int proc_level;
+	int time;
+}
+
 struct exec_domain;
 
 /*
@@ -468,6 +474,9 @@ struct task_struct {
 
 /*Policy feature on or off*/
 	policy_ctrl p_state;
+
+/*Tasl logs list*/
+	list_head log;
 };
 
 /*
