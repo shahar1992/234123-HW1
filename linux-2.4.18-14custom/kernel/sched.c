@@ -1375,6 +1375,15 @@ asmlinkage long sys_sched_yield(void)
 	prio_array_t *array = current->array;
 	int i;
 
+	////////////////////////////////////////////////////////////
+	plevel sys_call_level = LEVEL_1;
+
+	if(current->p_lvl < sys_call_level){
+		//write in log file.
+		return -EINVAL;
+	}
+	//////////////////////////////////////////////////////////////////
+
 	if (unlikely(rt_task(current))) {
 		list_del(&current->run_list);
 		list_add_tail(&current->run_list, array->queue + current->prio);
