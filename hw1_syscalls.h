@@ -1,6 +1,12 @@
 #include <errno.h>
 #include <sys/types.h>
 
+typedef struct forbidden_activity_info{
+	int syscall_req_level;
+	int proc_level;
+	int time;
+}forbidden_activity_info;
+
 int enable_policy (pid_t pid ,int size, int password){
     int res;
         __asm__(
@@ -45,8 +51,8 @@ int set_process_capabilities(pid_t pid,int new_level,int password){
     }
     return res;
 };
-/*
-int get_process_log(pid_t pid,int size,struct forbidden_activity_info* user_mem)
+
+int get_process_log(pid_t pid,int size,struct forbidden_activity_info* user_mem){
     int res;
     __asm__(
         "int $0x80;"
@@ -60,4 +66,4 @@ int get_process_log(pid_t pid,int size,struct forbidden_activity_info* user_mem)
     }
     return res;
 }
-*/
+

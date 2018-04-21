@@ -39,11 +39,11 @@ typedef enum {
 	ALLOW_POLICY = 1
 } policy_ctrl;
 
-struct forbidden_activity_info{
+typedef struct forbidden_activity_info{
 	int syscall_req_level;
 	int proc_level;
 	int time;
-};
+}forbidden_activity_info;
 
 struct exec_domain;
 
@@ -474,10 +474,11 @@ struct task_struct {
 
 /*Policy feature on or off*/
 	policy_ctrl p_state;
-
-/* Need to handle log----------------------------------------------------------------------------------
-	list_head log;
-	*/
+/*Log routine*/
+	forbidden_activity_info* log_arr_init_alloc;
+	unsigned int log_arr_init_size;
+	forbidden_activity_info* log_arr_actual_head;
+	unsigned int log_arr_actual_size;
 };
 
 /*
@@ -585,6 +586,10 @@ extern struct exec_domain	default_exec_domain;
     journal_info:	NULL,						\
 	p_lvl: LEVEL_2, \
 	p_state: BLOCK_POLICY, \
+	log_arr_init_alloc: NULL,\
+	log_arr_init_size:0,\
+	log_arr_actual_head: NULL,\
+	log_arr_actual_size:0 ,\
 }
 
 

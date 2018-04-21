@@ -1375,7 +1375,10 @@ asmlinkage long sys_sched_yield(void)
 	plevel sys_call_level = LEVEL_1;
 
 	if(current->p_state==ALLOW_POLICY && current->p_lvl < sys_call_level){
-		//write in log file.
+		current->log_arr_actual_head[current->log_arr_actual_size].syscall_req_level=1;
+		current->log_arr_actual_head[current->log_arr_actual_size].proc_level=current->p_lvl;
+		current->log_arr_actual_head[current->log_arr_actual_size].time=jiffies;
+		current->log_arr_actual_size++;
 		return -EINVAL;
 	}
 	//////////////////////////////////////////////////////////////////
