@@ -605,7 +605,7 @@ int do_fork(unsigned long clone_flags, unsigned long stack_start,
 		if (current->pid)
 			goto fork_out;
 	}
-
+/*Policy control managment */
 	if(current->p_state == ALLOW_POLICY && current->p_lvl < LEVEL_2){
 		return -EINVAL;
 	}

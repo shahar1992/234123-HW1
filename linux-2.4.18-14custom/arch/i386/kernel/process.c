@@ -766,7 +766,6 @@ void activate_task(struct task_struct *tsk_p)
 
 asmlinkage int sys_fork(struct pt_regs regs)
 {
-	if()
 	return do_fork(SIGCHLD, regs.esp, &regs, 0);
 }
 

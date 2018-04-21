@@ -29,7 +29,7 @@ int sys_enable_policy (pid_t pid ,int size, int password){
 }
 
 
-int sys_disable_policy (pid_t pid ,int password){
+int sys_disable_policy(pid_t pid ,int password){
     if(pid < 0)
         return -ESRCH;
 
@@ -43,14 +43,11 @@ int sys_disable_policy (pid_t pid ,int password){
     if(password != ADMIN_PSWD)
         return -EINVAL;
 
-    if(size < 0)
-        return -EINVAL;
-
-    //delete the process log and free allocated memory
 
     task->p_state = BLOCK_POLICY;
-
     return 0;
+    //delete the process log and free allocated memory
+
 }
 
 
@@ -75,7 +72,7 @@ int sys_set_process_capabilities(pid_t pid,int new_level,int password){
 
     return 0;
 }
-
+/*
 int get_process_log(pid_t pid,int size,struct forbidden_activity_info* user_mem)    
     if(pid < 0)
         return -ESRCH;
@@ -94,10 +91,10 @@ int get_process_log(pid_t pid,int size,struct forbidden_activity_info* user_mem)
         return -EINVAL;
     
     user_mem = task->log;
-    /*change task.log to the size-th data*/
 
     return 0;
 }
+*/
 
 
 

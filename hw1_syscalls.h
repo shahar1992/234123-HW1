@@ -1,4 +1,5 @@
 #include <errno.h>
+#include <sys/types.h>
 
 int enable_policy (pid_t pid ,int size, int password){
     int res;
@@ -13,14 +14,14 @@ int enable_policy (pid_t pid ,int size, int password){
         return -1;
     }
     return res;
-}
+};
 
-int disable_policy (pid_t pid ,int password){
+int disable_policy(pid_t pid ,int password){
         int res;
-        __asm__(
+        __asm__ volatile(
         "int $0x80;"
         : "=a" (res)
-        : "0" (244), "b" (pid), "d" (password)
+        : "0" (244), "b" (pid), "c" (password)
         :"memory"
     );
     if ((res) < 0) {
@@ -28,11 +29,11 @@ int disable_policy (pid_t pid ,int password){
         return -1;
     }
     return res;
-}
+};
 
-int set_process_capabilities(pid_t pid,int new_level,int password)
+int set_process_capabilities(pid_t pid,int new_level,int password){
     int res;
-    __asm__(
+    __asm__ volatile(
         "int $0x80;"
         : "=a" (res)
         : "0" (245), "b" (pid), "c" (new_level), "d" (password)
@@ -43,8 +44,8 @@ int set_process_capabilities(pid_t pid,int new_level,int password)
         return -1;
     }
     return res;
-}
-
+};
+/*
 int get_process_log(pid_t pid,int size,struct forbidden_activity_info* user_mem)
     int res;
     __asm__(
@@ -59,3 +60,4 @@ int get_process_log(pid_t pid,int size,struct forbidden_activity_info* user_mem)
     }
     return res;
 }
+*/
