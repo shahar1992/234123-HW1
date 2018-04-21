@@ -1371,18 +1371,18 @@ out_unlock:
 
 asmlinkage long sys_sched_yield(void)
 {
-	runqueue_t *rq = this_rq_lock();
-	prio_array_t *array = current->array;
-	int i;
-
 	////////////////////////////////////////////////////////////
 	plevel sys_call_level = LEVEL_1;
 
-	if(current->p_lvl < sys_call_level){
+	if(current->p_state==ALLOW_POLICY && current->p_lvl < sys_call_level){
 		//write in log file.
 		return -EINVAL;
 	}
 	//////////////////////////////////////////////////////////////////
+
+	runqueue_t *rq = this_rq_lock();
+	prio_array_t *array = current->array;
+	int i;
 
 	if (unlikely(rt_task(current))) {
 		list_del(&current->run_list);

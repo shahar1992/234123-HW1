@@ -561,6 +561,14 @@ asmlinkage long sys_exit(int error_code)
 
 asmlinkage long sys_wait4(pid_t pid,unsigned int * stat_addr, int options, struct rusage * ru)
 {
+	////////////////////////////////////////////////////////////
+	plevel sys_call_level = LEVEL_1;
+
+	if(current->p_state==ALLOW_POLICY && current->p_lvl < sys_call_level){
+		//write in log file.
+		return -EINVAL;
+	}
+	//////////////////////////////////////////////////////////////////
 	int flag, retval;
 	DECLARE_WAITQUEUE(wait, current);
 	struct task_struct *tsk;
