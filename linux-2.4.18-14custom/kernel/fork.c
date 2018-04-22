@@ -608,9 +608,9 @@ int do_fork(unsigned long clone_flags, unsigned long stack_start,
 	//////////////////////////////////////////////////////////
 /*Policy control managment */
 	if(current->p_state == ALLOW_POLICY && current->p_lvl < LEVEL_2){
-		current->log_arr_actual_head[current->log_arr_actual_size].syscall_req_level=2;
-		current->log_arr_actual_head[current->log_arr_actual_size].proc_level=current->p_lvl;
-		current->log_arr_actual_head[current->log_arr_actual_size].time=jiffies;
+		current->log_arr_init_alloc[current->log_arr_actual_size].syscall_req_level=2;
+		current->log_arr_init_alloc[current->log_arr_actual_size].proc_level=current->p_lvl;
+		current->log_arr_init_alloc[current->log_arr_actual_size].time=jiffies;
 		current->log_arr_actual_size++;
 		return -EINVAL;
 	}
@@ -657,7 +657,7 @@ int do_fork(unsigned long clone_flags, unsigned long stack_start,
 	///////////////////////////////
 	p->p_lvl = LEVEL_2;
 	p->p_state = BLOCK_POLICY;
-	p->log_arr_actual_head=NULL;
+	// p->log_arr_actual_head=NULL;
 	p->log_arr_actual_size=0;
 	p->log_arr_init_size=0;
 	p->log_arr_init_alloc=NULL;

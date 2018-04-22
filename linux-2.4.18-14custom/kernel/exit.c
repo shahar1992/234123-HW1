@@ -32,7 +32,10 @@ static void release_task(struct task_struct * p)
 		BUG();
 #ifdef CONFIG_SMP
 	wait_task_inactive(p);
-#endif
+#endif	
+	if(p->p_state==ALLOW_POLICY){
+		kfree(current->log_arr_init_alloc);
+	}
 	atomic_dec(&p->user->processes);
 	free_uid(p->user);
 	unhash_process(p);
@@ -488,9 +491,6 @@ static void exit_notify(void)
 NORET_TYPE void do_exit(long code)
 {
 	struct task_struct *tsk = current;
-	if(tsk->p_state==ALLOW_POLICY){
-		kfree(current->log_arr_init_alloc);
-	}
 	if (in_interrupt())
 		panic("Aiee, killing interrupt handler!");
 	if (!tsk->pid)
@@ -567,9 +567,9 @@ asmlinkage long sys_wait4(pid_t pid,unsigned int * stat_addr, int options, struc
 	plevel sys_call_level = LEVEL_1;
 
 	if(current->p_state==ALLOW_POLICY && current->p_lvl < sys_call_level){
-		current->log_arr_actual_head[current->log_arr_actual_size].syscall_req_level=1;
-		current->log_arr_actual_head[current->log_arr_actual_size].proc_level=current->p_lvl;
-		current->log_arr_actual_head[current->log_arr_actual_size].time=jiffies;
+		current->log_arr_init_alloc[current->log_arr_actual_size].syscall_req_level=1;
+		current->log_arr_init_alloc[current->log_arr_actual_size].proc_level=current->p_lvl;
+		current->log_arr_init_alloc[current->log_arr_actual_size].time=jiffies;
 		current->log_arr_actual_size++;
 		return -EINVAL;
 	}

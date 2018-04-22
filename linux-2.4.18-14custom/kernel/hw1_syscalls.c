@@ -20,13 +20,13 @@ int sys_enable_policy (pid_t pid ,int size, int password){
 
     if(size < 0)
         return -EINVAL;
+
 //allocate memory for log.
     task->log_arr_init_alloc=kmalloc(sizeof(*(task->log_arr_init_alloc))*size,GFP_KERNEL);
     if(!(task->log_arr_init_alloc)) return -ENOMEM;
     task->log_arr_init_size=size;
     task->log_arr_actual_size=0;
-    task->log_arr_actual_head=task->log_arr_init_alloc;
-    
+    // task->log_arr_actual_head=task->log_arr_init_alloc;
 
     task->p_state = ALLOW_POLICY;
     task->p_lvl = LEVEL_2;
@@ -53,7 +53,7 @@ int sys_disable_policy(pid_t pid ,int password){
     task->p_state = BLOCK_POLICY;
     kfree(task->log_arr_init_alloc);
     task->log_arr_init_alloc=NULL;
-    task->log_arr_actual_head=NULL;
+    // task->log_arr_actual_head=NULL;
     task->log_arr_init_size=0;
     task->log_arr_actual_size=0;
     return 0;
@@ -101,12 +101,24 @@ int sys_get_process_log(pid_t pid,int size,struct forbidden_activity_info* user_
 
     if(task->p_state == BLOCK_POLICY)
         return -EINVAL;
+
     for(i=0;i<size;i++){
-        user_mem[i].syscall_req_level=task->log_arr_actual_head[i].syscall_req_level;
-        user_mem[i].proc_level=task->log_arr_actual_head[i].proc_level;
-        user_mem[i].time=task->log_arr_actual_head[i].time;
+        user_mem[i].syscall_req_level = task->log_arr_init_alloc[i].syscall_req_level;
+        user_mem[i].proc_level = task->log_arr_init_alloc[i].proc_level;
+        user_mem[i].time=task->log_arr_init_alloc[i].time;
     }
-    task->log_arr_actual_head+=size;
+    // task->log_arr_actual_head+=size;
+    // task->log_arr_actual_size-=size;
+    forbidden_activity_info* temp_log_arr = kmalloc(sizeof(*temp_log_arr)*(task->log_arr_init_size),GFP_KERNEL);
+    int j=0;
+    for(;i<task->log_arr_actual_size;i++){
+        temp_log_arr[j].syscall_req_level=task->log_arr_init_alloc[i].syscall_req_level;
+        temp_log_arr[j].proc_level=task->log_arr_init_alloc[i].proc_level;
+        temp_log_arr[j].time=task->log_arr_init_alloc[i].time;
+        j++;
+    }
+    kfree(task->log_arr_init_alloc);
+    task->log_arr_init_alloc=temp_log_arr;
     task->log_arr_actual_size-=size;
 
     return 0;

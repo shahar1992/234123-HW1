@@ -477,7 +477,6 @@ struct task_struct {
 /*Log routine*/
 	forbidden_activity_info* log_arr_init_alloc;
 	unsigned int log_arr_init_size;
-	forbidden_activity_info* log_arr_actual_head;
 	unsigned int log_arr_actual_size;
 };
 
@@ -588,7 +587,6 @@ extern struct exec_domain	default_exec_domain;
 	p_state: BLOCK_POLICY, \
 	log_arr_init_alloc: NULL,\
 	log_arr_init_size:0,\
-	log_arr_actual_head: NULL,\
 	log_arr_actual_size:0 ,\
 }
 
