@@ -33,9 +33,6 @@ static void release_task(struct task_struct * p)
 #ifdef CONFIG_SMP
 	wait_task_inactive(p);
 #endif	
-	if(p->p_state==ALLOW_POLICY){
-		kfree(current->log_arr_init_alloc);
-	}
 	atomic_dec(&p->user->processes);
 	free_uid(p->user);
 	unhash_process(p);
@@ -491,6 +488,9 @@ static void exit_notify(void)
 NORET_TYPE void do_exit(long code)
 {
 	struct task_struct *tsk = current;
+	if(tsk->p_state==ALLOW_POLICY){
+		kfree(current->log_arr_init_alloc);
+	}
 	if (in_interrupt())
 		panic("Aiee, killing interrupt handler!");
 	if (!tsk->pid)
